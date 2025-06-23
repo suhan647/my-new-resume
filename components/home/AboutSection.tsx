@@ -134,7 +134,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Card className="bg-slate-800/80 backdrop-blur-xl border border-purple-500/20 hover:border-purple-500/40 p-10 relative overflow-hidden group">
+            <Card className="bg-slate-800/80 backdrop-blur-xl border border-purple-500/20 hover:border-purple-500/40 p-4 sm:p-8 md:p-10 relative overflow-hidden group w-full max-w-full">
               {/* Animated background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               {/* Floating particles */}
@@ -162,7 +162,7 @@ export default function AboutSection() {
                 {/* Profile Section */}
                 <div className="text-center">
                   <motion.div
-                    className="relative w-40 h-40 mx-auto mb-6"
+                    className="relative w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 mx-auto mb-6"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
@@ -170,22 +170,22 @@ export default function AboutSection() {
                     <motion.div
                       className="absolute inset-0 rounded-full border-2 border-gradient-to-r from-indigo-500 to-purple-600"
                       animate={{ rotate: 360 }}
-                      transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+                      transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: 'linear' }}
                     />
                     <motion.div
                       className="absolute inset-2 rounded-full border border-purple-500/50"
                       animate={{ rotate: -360 }}
-                      transition={{ duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+                      transition={{ duration: 15, repeat: Number.POSITIVE_INFINITY, ease: 'linear' }}
                     />
                     {/* Profile image placeholder with gradient */}
                     <div className="absolute inset-4 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center">
                       <motion.div whileHover={{ rotate: 360 }} transition={{ duration: 0.5 }}>
-                        <User className="h-16 w-16 text-white" />
+                        <User className="h-12 w-12 xs:h-14 xs:w-14 sm:h-16 sm:w-16 text-white" />
                       </motion.div>
                     </div>
                     {/* Status indicator */}
                     <motion.div
-                      className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-slate-900 flex items-center justify-center"
+                      className="absolute -bottom-2 -right-2 w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 bg-green-500 rounded-full border-4 border-slate-900 flex items-center justify-center"
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
                     >
@@ -193,7 +193,7 @@ export default function AboutSection() {
                     </motion.div>
                   </motion.div>
                   <motion.h3
-                    className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-3"
+                    className="text-xl xs:text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-3"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
@@ -201,7 +201,7 @@ export default function AboutSection() {
                     Ready to Contribute
                   </motion.h3>
                   <motion.p
-                    className="text-gray-400 text-lg"
+                    className="text-gray-400 text-base xs:text-lg"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
@@ -210,41 +210,41 @@ export default function AboutSection() {
                   </motion.p>
                 </div>
                 {/* Interactive Status Cards */}
-                <div className="space-y-4">
+                <div className="flex flex-col gap-3 sm:gap-4 w-full">
                   {[
                     {
-                      label: "Availability",
-                      value: "Immediately",
-                      icon: "🟢",
-                      color: "from-green-500 to-emerald-500",
+                      label: 'Availability',
+                      value: 'Immediately',
+                      icon: '🟢',
+                      color: 'from-green-500 to-emerald-500',
                     },
                     {
-                      label: "Work Type",
-                      value: "Full-time / Remote",
-                      icon: "💼",
-                      color: "from-blue-500 to-cyan-500",
+                      label: 'Work Type',
+                      value: 'Full-time / Remote',
+                      icon: '💼',
+                      color: 'from-blue-500 to-cyan-500',
                     },
                     {
-                      label: "Experience",
-                      value: "2.5+ Years",
-                      icon: "⭐",
-                      color: "from-purple-500 to-pink-500",
+                      label: 'Experience',
+                      value: '2.5+ Years',
+                      icon: '⭐',
+                      color: 'from-purple-500 to-pink-500',
                     },
                   ].map((item, index) => (
                     <motion.div
                       key={item.label}
-                      className="flex items-center justify-between p-4 bg-slate-700/50 rounded-lg border border-gray-600/50 hover:border-purple-500/50 transition-all duration-300 group/item cursor-pointer"
+                      className="flex flex-col xs:flex-row xs:items-center xs:justify-between gap-2 xs:gap-0 p-3 xs:p-4 bg-slate-700/50 rounded-lg border border-gray-600/50 hover:border-purple-500/50 transition-all duration-300 group/item cursor-pointer w-full overflow-x-auto"
                       initial={{ opacity: 0, x: 20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.4 + index * 0.1 }}
                       whileHover={{ scale: 1.02, x: 5 }}
                     >
-                      <span className="text-gray-400 font-medium flex items-center">
+                      <span className="text-gray-400 font-medium flex items-center text-base xs:text-lg">
                         <span className="mr-2 text-lg">{item.icon}</span>
                         {item.label}
                       </span>
                       <motion.span
-                        className="text-white font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent"
+                        className="text-white font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent text-base xs:text-lg"
                         whileHover={{ scale: 1.05 }}
                       >
                         {item.value}
