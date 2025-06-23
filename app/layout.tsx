@@ -6,14 +6,14 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Suhan Ahmed - Software Developer | React & Next.js Expert | Available for Hire",
+  title: "Suhan Ahmed - Software Engineer | React & Next.js Expert",
   description:
-    "Experienced Software Developer with 3+ years in React, Next.js, and modern web technologies. Available for hire - Building scalable, user-friendly applications that drive business success.",
+    "Experienced Software Engineer with 2+ years in React, Next.js, and modern web technologies. Available for hire - Building scalable, user-friendly applications that drive business success.",
   keywords:
     "Suhan Ahmed, Software Developer, React Developer, Next.js, Frontend Developer, JavaScript, TypeScript, Hire Developer, Web Developer Portfolio, Full Stack Developer, Remote Developer",
   authors: [{ name: "Suhan Ahmed" }],
   openGraph: {
-    title: "Suhan Ahmed - Software Developer | Available for Hire",
+    title: "Suhan Ahmed - Software Engineer",
     description:
       "2+ years experience in React, Next.js & modern web technologies. Ready to contribute to your team's success with scalable solutions.",
     type: "website",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Suhan Ahmed - Software Developer",
+    title: "Suhan Ahmed - Software Engineer",
     description: "Experienced React & Next.js developer available for hire. Building exceptional web experiences.",
   },
   robots: {
