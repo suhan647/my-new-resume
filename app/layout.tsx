@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Suhan Ahmed - Software Developer | Available for Hire",
     description:
-      "3+ years experience in React, Next.js & modern web technologies. Ready to contribute to your team's success with scalable solutions.",
+      "2+ years experience in React, Next.js & modern web technologies. Ready to contribute to your team's success with scalable solutions.",
     type: "website",
-    url: "https://suhan-ahmed.dev",
+    url: "https://my-new-resume-rust.vercel.app/",
     siteName: "Suhan Ahmed Portfolio",
   },
   twitter: {
